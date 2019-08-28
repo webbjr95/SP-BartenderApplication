@@ -1,0 +1,4 @@
+.vs/
+/BartenderApplication/BartenderApplication/obj/*
+/BartenderApplication/BartenderApplication/bin/*
+/BartenderApplication/BartenderApplication/Migrations/*

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BartenderApplication", "BartenderApplication\BartenderApplication.csproj", "{FFD5464E-515A-4C10-B9C0-7C64C3C34D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD5464E-515A-4C10-B9C0-7C64C3C34D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD5464E-515A-4C10-B9C0-7C64C3C34D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD5464E-515A-4C10-B9C0-7C64C3C34D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD5464E-515A-4C10-B9C0-7C64C3C34D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FC7AE59-F29F-4779-8252-9E0A6BB5F9F0}
+	EndGlobalSection
+EndGlobal
