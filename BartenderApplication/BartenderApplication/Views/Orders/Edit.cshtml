@@ -1,0 +1,81 @@
+﻿@model BartenderApplication.Models.Orders
+
+@{
+    ViewData["Title"] = "Closing Ticket";
+}
+
+<h2>Editing order for @Model.NameForOrder</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OrderId" />
+            <div class="form-group">
+                <label asp-for="NameForOrder" class="control-label"></label>
+                <input asp-for="NameForOrder" class="form-control" />
+                <span asp-validation-for="NameForOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserRequest" class="control-label"></label>
+                <textarea asp-for="UserRequest" class="form-control"></textarea>
+                <span asp-validation-for="UserRequest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DrinkTitle" class="control-label"></label>
+                <input asp-for="DrinkTitle" class="form-control" readonly />
+                <span asp-validation-for="DrinkTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DrinkQuantity" class="control-label"></label>
+                <input asp-for="DrinkQuantity" class="form-control" readonly />
+                <span asp-validation-for="DrinkQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalCost" class="control-label"></label>
+                <input asp-for="TotalCost" class="form-control" readonly />
+                <span asp-validation-for="TotalCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderTime" class="control-label"></label>
+                <input asp-for="OrderTime" class="form-control" readonly />
+                <span asp-validation-for="OrderTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="CloseTime" type="hidden" class="form-control" value="@System.DateTime.Now" />
+                <span asp-validation-for="CloseTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="UserId" type="hidden" class="form-control" value="@Model.UserId" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="DrinkId" type="hidden" class="form-control" value="@Model.DrinkId" />
+                <span asp-validation-for="DrinkId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="OpenStatus" /> @Html.DisplayNameFor(model => model.OpenStatus)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssignedTo" class="control-label"></label>
+                <input asp-for="AssignedTo" class="form-control" />
+                <span asp-validation-for="AssignedTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Order Queue</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

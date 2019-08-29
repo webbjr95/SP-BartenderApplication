@@ -1,7 +1,55 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<Drinks>
+
+@{
+    ViewData["Title"] = "Order Drinks Here!";
 }
 
-<div>
-**Place holder**
-</div>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+</style>
+
+<body>
+        <h1 style="text-align: center;">Drink Menu</h1>
+
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Drink Up!</th>
+                </thead>
+
+                <tbody>
+                    @foreach (var drink in Model)
+                {
+                <form asp-controller="Orders" asp-action="CreateOrder" method="get">
+                    <tr>
+                        <td>@drink.Title</td>
+                        <td>@drink.Description</td>
+                        <td>$@drink.Price</td>
+                        <td>
+                            <select name="drinkQuantity">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td><input type="submit" value="Purchase" /></td>
+                        <input type="hidden" name="drinkId" value="@drink.DrinkId" />
+                        <input type="hidden" name="drinkTitle" value="@drink.Title" />
+                        <input type="hidden" name="drinkPrice" value="@drink.Price" />
+                    </tr>
+                 </form>
+            }
+                </tbody>
+            </table>
+        </div>
+</body>

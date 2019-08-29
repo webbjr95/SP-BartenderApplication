@@ -1,0 +1,86 @@
+INSERT INTO [BartenderApplication].[dbo].[Drinks]
+  (
+    DrinkId,
+    Title,
+    Description,
+    Price,
+    Ingredients
+  )
+  VALUES
+  (
+    '1',
+    'WHITE RUSSIAN',
+    'Created in 1949 by a Belgian bartender named Gustave Tops, and popularized by the 1998 film “The Big Lebowski,” the White Russian continues to be a world-wide favorite. The White Russian combines heavy cream (or half and half), vodka, and coffee liqueur for a luxurious nightcap.',
+    '6.49',
+    'heavy cream, vodka, coffee liqueur'
+  ),
+  (
+    '2',
+    'GIN GIN MULE',
+    'You might do a double-take when you see the Gin Gin Mule on the list of the world’s most popular cocktails. This newcomer is a cross between a Moscow Mule and a Mojito, with gin starring in the show. The creative cocktail was first made in 2000 by Audrey Saunders, owner of Pegu Club in New York City.',
+    '4.99',
+    'simple syrup, fresh lime juice, mint sprig, Tanqueray London dry gin, Audrey Saunders Ginger beer'
+  ),
+  (
+    '3',
+    'LONG ISLAND ICED TEA',
+    'Long Island Iced Tea is a timeless anomaly: vodka, gin, tequila, rum, triple sec, and cola in big ol’ glass. It’s sweet, sticky, boozy, made for making memories (and promptly forgetting them), and holding on at No. 44 in the world’s most popular cocktails.',
+    '10.49',
+    'vodka, gin, tequila, rum, triple sec, cola'
+  ),
+  (
+    '4',
+    'VODKA MARTINI',
+    'The Vodka Martini spiked in popularity in 2017, but slides down 15 places in 2019. It’s pretty basic: a shot of chilled vodka mixed with a little dry vermouth, somehow still in demand at the world’s best cocktail bars.',
+    '7.69',
+    'vodka, dry vermouth'
+  ),
+  (
+    '5',
+    'COSMOPOLITAN',
+    'Made iconic by TV’s “Sex and the City,” the Cosmo mixes vodka, triple sec, cranberry juice, and lime juice. It’s the liquid soul of the aspirational 1990s female, and still resonates with the world today. (Incidentally, Carrie Bradshaw has reportedly moved on to Stella Artois.)',
+    '5.55',
+    'vodka, triple sec, cranberry juice, lime juice'
+  ),
+  (
+    '6',
+    'FRENCH 75',
+    'The French 75 calls for gin, lemon juice, sugar, and Champagne. It’s a classy affair, but can also be found in one of our favorite canned cocktails.',
+    '10.75',
+    'gin, lemon juice, sugar, Champagne'
+  ),
+  (
+    '7',
+    'PIÑA COLADA',
+    'Another nod to the tiki resurgence, this 1970s-era Puerto Rican slushie pleasure is made with white rum, coconut cream, and pineapple juice. It enters the ranking this year as one of the most-ordered cocktails of the year.',
+    '6.66',
+    'white rum, coconut cream, pineapple juice'
+  ),
+  (
+    '8',
+    'AMARETTO SOUR',
+    'In a victorious climb from No. 41 in 2017, the Amaretto Sour is both a staple at the world’s best bars, and a drink we’ve compared to a liquid Sour Patch Kid. It’s both sweet from the nutty amaretto, and sour from lemon juice, while egg white smooths out the tang.',
+    '4.35',
+    'maraschino cherry, orange slice, fresh lemon juice, simple syrup, Amaretto liqueur'
+  ),
+  (
+    '9',
+    'MAI TAI',
+    'Perhaps the tiki-est of tiki cocktails, the Mai Tai was hard to resist among the world’s drinkers last year. Its recipe typically includes different varieties of rum, orange juice, triple sec, and several sweeteners.',
+    '3.33',
+    'rum, orange juice, triple sec, sweeteners'
+  ),
+  (
+    '10',
+    'RUM OLD FASHIONED',
+    'Rum has grown out of its rum-and-coke banality to world-class cocktail mixer. The Rum Old Fashioned is simply an Old Fashioned made with rum.',
+    '5.99',
+    'rum, orange slice, cherry'
+  ),
+  (
+    '11',
+    'BLOODY MARY',
+    'The Bloody Mary is as much an experience as a drink. The brunch-time staple is best enjoyed with a house mix of tomato juice, vodka, and spices. And, if it’s your thing, an array of garnishes, from celery and olives, to bacon, to entire cheeseburgers, are known to make appearances.',
+    '8.37',
+    'tomato juice, vodka, spices, celery'
+  );
